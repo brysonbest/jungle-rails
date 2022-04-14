@@ -1,0 +1,14 @@
+<tr>
+  <td>
+    <%= product %>
+  </td>
+  <td>
+    <%= humanized_money_with_symbol price/100 %>
+  </td>
+  <td>
+  <%= quantity  %>
+</td>
+  <td>
+    <%= humanized_money_with_symbol price/100 * quantity  %>
+  </td>
+</tr>
