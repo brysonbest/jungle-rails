@@ -1,2 +1,20 @@
-<h1>Users#users</h1>
-<p>Find me in app/views/users/users.html.erb</p>
+<h1>Signup!</h1>
+
+<%= form_for :user, url: '/users' do |f| %>
+
+  <div class="col-sm-8">
+        <dl class="dl-horizontal">
+        <dt>Name</dt>
+        <dd><%= f.text_field :name %></dd>
+        <dt>Email</dt>
+        <dd><%= f.text_field :email %></dd>
+        <dt>Password</dt>
+        <dd><%= f.password_field :password %></dd>
+        <dt>Confirm Password</dt>
+        <dd><%= f.password_field :password_confirmation %></dd>
+        <dt>Submit</dt>
+        <dd><%= f.submit "Submit" %></dd>
+  </div>
+
+
+<% end %>
